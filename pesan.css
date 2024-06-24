@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background: #808f81;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav, .center-nav, .right-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.left-nav {
+    margin-left: 1em;
+    margin-right: 5em;
+}
+
+.center-nav {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.right-nav {
+    margin: 1em;
+}
+
+nav ul li {
+    margin: 0 1em;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'roboto';
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a img {
+    max-height: 80px;
+    display: block;
+}
+
+.booking-button {
+    background-color: #3517df;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.booking-button:hover {
+    background-color: #d32f2f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+main {
+    flex: 1;
+}
+
+.booking {
+    padding: 2em;
+    background: #f9f9f9;
+    max-width: 800px;
+    width: 100%;
+    margin: 2em auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 60vh;
+}
+
+.booking h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.booking input, .booking select {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.booking button:hover {
+    background: #45a049;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Times New Roman', serif;
+    font-size: 1em;
+    margin-top: auto;
+    width: 100%;
+}
